@@ -402,7 +402,7 @@ def dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True,
         return _default_encoder.encode(obj)
     if cls is None:
         cls = JSONEncoder
-	cls = JSONEncoder
+    cls = JSONEncoder
     return cls(
         skipkeys=skipkeys, ensure_ascii=ensure_ascii,
         check_circular=check_circular, allow_nan=allow_nan, indent=indent,
